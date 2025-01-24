@@ -1,0 +1,14 @@
+# melos.yaml
+name: super_app
+  # Para incluir pacotes a partir de repositórios Git
+  - git:
+      url: https://github.com/username/microapp_commons.git
+      path: packages/commons  # Caminho dentro do repositório, se necessário
+  - git:
+      url: https://github.com/username/microapp_core.git
+      path: packages/core  # Caminho dentro do repositório, se necessário
+
+  # Ou você pode configurar como dependências locais, caso já tenha essas dependências como pacotes
+  # locais dentro do seu monorepo
+
+# Outras configurações podem ser adicionadas conforme o projeto cresce
